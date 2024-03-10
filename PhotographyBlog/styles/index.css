@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #2769b5;
+}
+
+.global-padding {
+    padding: 10px 100px;
+}
+
+.container .nav {
+    background-color: hsl(0, 0%, 81%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .nav img {
+    height: 50px;
+}
+
+.container .nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container .nav ul li {
+    display: inline-block;
+    margin-right: 16px;
+}
+
+.container .nav ul li:last-child {
+    margin-right: 0;
+}
+
+.container .nav ul li a {
+    padding: 4px 8px;
+    color: #191919;
+    border-bottom: 1px solid #191919;
+}
+
+.bg-image {
+    height: 300px;
+    background-image: url("../images/photographer.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bg-image h1 {
+    margin-top: 0;
+}
+
+.bg-image p {
+    margin: 0;
+}
+
+section.description p {
+    text-align: center;
+}
+
+.card-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card-wrapper .blog-card {
+    width: 200px;
+    margin: 12px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.card-wrapper .blog-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card-wrapper .card-content {
+    padding: 8px 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-wrapper .card-content h2 {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.card-wrapper .card-content span {
+    font-size: 12px;
+    color: #a3a3a3;
+}
+
+.card-wrapper .card-content a {
+    font-size: 12px;
+    align-self: flex-end;
+}
+
+
+.footer {
+    margin-top: 60px;
+    border-top: 1px solid #000;
+    background-color: #fff;
+}
+
+.footer div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer>p {
+    text-align: center;
+    font-size: 14px;
+    color: #a2a2a2;
+    font-weight: 200;
+    margin: 0;
+    background-color: #f2f2f2;
+}
+
+.footer .footer-logo {
+    width: 50%;
+    font-size: 14px;
+}
+
+.footer .footer-col {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer .footer-col i {
+    margin-right: 8px;
+}
+
+.footer .footer-logo img {
+    width: 120px
+}
