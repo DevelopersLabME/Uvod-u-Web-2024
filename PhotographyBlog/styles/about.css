@@ -1,0 +1,140 @@
+.padding-main {
+    padding: 32px 10%;
+}
+
+.main {
+    min-height: calc(100vh - 300px);
+}
+
+/* About Section */
+
+.about {
+    text-align: center;
+}
+
+.about-colored {
+    background-color: #472f1d7c;
+}
+
+.about h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-info {
+    margin: 3rem 0;
+    display: grid;
+    column-gap: 32px;
+    grid-template-columns: 500px 1fr;
+}
+
+.about-colored .about-info {
+    margin: 3rem 0;
+    display: grid;
+    column-gap: 32px;
+    grid-template-columns: 1fr 500px;
+}
+
+.about-img img {
+    width: 100%;
+}
+
+.about-info p {
+    font-size: 1.3rem;
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+
+.about-info .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.about-colored .about-info .about-content {
+    align-items: flex-start;
+}
+
+.about-info .contact-us {
+    font-size: 18px;
+    padding: 12px 24px;
+    background-color: #A69991;
+    border: 1px solid #472f1d;
+    color: #472f1d;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.about-info .contact-us:hover {
+    background-color: #472f1d;
+    border: 1px solid #A69991;
+    color: #A69991;
+}
+
+/* Team Section */
+
+.team {
+    padding: 100px 50px;
+    text-align: center;
+}
+
+.team h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.team-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 70px;
+}
+
+.card {
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    transition: .5s;
+    padding: 20px 26px;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card-img {
+    border-radius: 100%;
+    border: 3px solid #4D4D4E;
+    width: 10rem;
+}
+
+.card-name {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.card-role {
+    font-size: .9rem;
+    margin: 5px 0;
+}
+
+.card-email {
+    font-size: 1rem;
+    color: #4d4d4e62;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .about-info,
+    .about-colored .about-info {
+        grid-template-columns: 1fr;
+        row-gap: 32px;
+    }
+}

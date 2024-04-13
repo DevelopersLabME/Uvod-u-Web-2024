@@ -4,29 +4,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Photography Blog</title>
+    <title>Photography Blog</title>
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/about.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
 
-    <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    <div class="container">
+        <header>
+            <nav class="nav padding-nav">
+                <img alt="logo" src="./images/logo-brown.png" />
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./login.html">Sign in</a></li>
+                    <li><a href="./register.html">Register</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <section>
-        <h1>About Us</h1>
-        <p>Welcome to our Photography Blog! We are passionate about capturing and sharing moments through our lens. Our
-            team of dedicated photographers is committed to bringing you stunning visuals and inspiring stories. Explore
-            our blog to dive into the world of photography with us.</p>
-    </section>
+        <div class="main">
+            <section class="about">
+                <div class="padding-main">
+                    <div class="about-info">
+                        <div class="about-img">
+                            <img src="./images/photo-2.jpg" alt="Geeksforgeeks">
+                        </div>
+                        <div class="about-content">
+                            <h1>Who Are We?</h1>
+                            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo atque, est dolorem hic
+                                temporibus pariatur nihil facilis? Rem earum animi voluptatibus facere, dolore, in vitae
+                                porro sunt corporis ratione harum! Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit.
+                                Totam deleniti, sed tempora vitae magni aut modi eum eius et aliquid eligendi suscipit
+                                sint
+                                dolore rerum id libero est mollitia reiciendis! Lorem ipsum, dolor sit amet consectetur
+                                adipisicing elit.
+                            </p>
+                            <a class="contact-us">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="about about-colored">
+                <div class="padding-main">
+                    <div class="about-info">
+                        <div class="about-content">
+                            <h1>Who Are We?</h1>
+                            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo atque, est dolorem hic
+                                temporibus pariatur nihil facilis? Rem earum animi voluptatibus facere, dolore, in vitae
+                                porro sunt corporis ratione harum! Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit.
+                                Totam deleniti, sed tempora vitae magni aut modi eum eius et aliquid eligendi suscipit
+                                sint
+                                dolore rerum id libero est mollitia reiciendis! Lorem ipsum, dolor sit amet consectetur
+                                adipisicing elit.
+                            </p>
+                            <a class="contact-us">Contact Us</a>
+                        </div>
+                        <div class="about-img">
+                            <img src="./images/photographer.jpeg" alt="Geeksforgeeks">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="team padding-main">
+                <h1>Meet Our Team</h1>
+                <p>Get to know the passionate artists behind the lens who bring our photography blog to life with their
+                    unique vision and creativity.</p>
+                <div class="team-cards">
+                    <div class="card">
+                        <img class="card-img" src="./images/profile.png">
+                        <div class="card-info">
+                            <h2 class="card-name">Kate</h2>
+                            <p class="card-role">Co-Founder</p>
+                            <p class="card-email">kate@example.com</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="./images/profile.png">
+                        <div class="card-info">
+                            <h2 class="card-name">Miller</h2>
+                            <p class="card-role">Co-Founder</p>
+                            <p class="card-email">miller@example.com</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="./images/profile.png">
+                        <div class="card-info">
+                            <h2 class="card-name">Joe</h2>
+                            <p class="card-role">Co-Founder</p>
+                            <p class="card-email">joe@example.com</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
 
-    <footer>
-        <p>&copy; 2024 Photography Blog. All rights reserved.</p>
-    </footer>
+        <footer class="footer">
+            <div class="flex-row padding-footer">
+                <div class="footer-col footer-logo">
+                    <img alt="camera-logo" src="./images/logo.png" />
+                    <p>Our photography blog is powered by a dedicated team of passionate photographers, talented
+                        writers,
+                        and
+                        tech enthusiasts - discover more about us at our "About Us" section. </p>
+                </div>
+                <div class="footer-col">
+                    <p>Links:</p>
+                    <a href="/">Home</a>
+                    <a href="./about.html">About</a>
+                    <a href="./contact.html">Contact</a>
+                </div>
+                <div class="footer-col">
+                    <p>Follow us:</p>
+                    <div>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2024 Photography Blog. All rights reserved.</p>
+        </footer>
+    </div>
 
 </body>
 
