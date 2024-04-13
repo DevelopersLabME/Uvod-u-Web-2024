@@ -5,35 +5,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photography Blog</title>
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/single.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/about.html">About</a></li>
-                <li><a href="/contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div>
-        <img src="./images/portrait1.webp" alt="portrait">
-        <h1>This is my first blog post</h1>
-        <span>02.03.2024.</span>
-        <p>More about my first blog post</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae sunt officiis, nostrum delectus quas excepturi
-            velit dicta ea labore, amet nam, qui mollitia? Delectus eligendi ducimus maiores, illo ullam reiciendis?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente omnis nemo quaerat quisquam inventore iste
-            neque cum cupiditate, ad temporibus non assumenda, amet quae accusamus veniam quibusdam aut ex laboriosam!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus et asperiores repellendus facilis,
-            ducimus, pariatur aspernatur quos ut esse facere aliquam nam assumenda fugiat quidem porro odit tempora amet
-            accusantium.</p>
+
+    <div class="container">
+        <header>
+            <nav class="nav padding-nav">
+                <img alt="logo" src="./images/logo-brown.png" />
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./login.html">Sign in</a></li>
+                    <li><a href="./register.html">Register</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="main padding-main">
+            <div>
+                <div class="img-wrapper"><img src="./images/portrait.jpg" alt="Blog Post Image"></div>
+                <p class="author-name">Author: John Doe</p>
+            </div>
+            <div class="post-details">
+                <h2>Blog Post Title</h2>
+                <p class="date-created">Published on March 22, 2024</p>
+                <p class="blog-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent
+                    libero. Sed
+                    cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Lorem ipsum
+                    dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed
+                    cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Lorem ipsum
+                    dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed
+                    cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Lorem ipsum
+                    dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed
+                    cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Lorem ipsum
+                    dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed
+                    cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Lorem ipsum
+                    dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed
+                    cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Lorem ipsum
+                    dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed
+                    cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Lorem ipsum
+                    dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed
+                    cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Lorem ipsum
+                    dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed
+                    cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Lorem ipsum
+                    dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed
+                    cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Lorem ipsum
+                    dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed
+                    cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.</p>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="flex-row padding-footer">
+                <div class="footer-col footer-logo">
+                    <img alt="camera-logo" src="./images/logo.png" />
+                    <p>Our photography blog is powered by a dedicated team of passionate photographers, talented
+                        writers,
+                        and
+                        tech enthusiasts - discover more about us at our "About Us" section. </p>
+                </div>
+                <div class="footer-col">
+                    <p>Links:</p>
+                    <a href="/">Home</a>
+                    <a href="./about.html">About</a>
+                    <a href="./contact.html">Contact</a>
+                </div>
+                <div class="footer-col">
+                    <p>Follow us:</p>
+                    <div>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2024 Photography Blog. All rights reserved.</p>
+        </footer>
     </div>
-    <footer>
-        <span>This is footer example</span>
-        <p>© 2024 Photography Blog. All rights reserved.</p>
-    </footer>
+
 </body>
 
 </html>
