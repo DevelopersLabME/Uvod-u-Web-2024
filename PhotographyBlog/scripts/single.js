@@ -4,9 +4,8 @@ const params = new URLSearchParams(window.location.search);
 
 const id = Number(params.get("id"));
 
-const postForId = photographyBlogPosts.filter(post => post.id === id)[0];
-
 function generateSinglePost(imageLink, title, author, date, description){
+    // TODO Create elements using DOM methods.
     return `<div>
                 <div class="img-wrapper"><img src="${imageLink}" alt="${title}"></div>
                 <p class="author-name">Author: ${author}</p>
@@ -16,12 +15,18 @@ function generateSinglePost(imageLink, title, author, date, description){
                 <p class="date-created">Published on ${formatDate(date)}</p>
                 <p class="blog-text">${description}</p>
             </div>`
-}
+        }
 
-postContainer.innerHTML += generateSinglePost(
-    postForId.imageLink,
-    postForId.title,
-    postForId.author,
-    postForId.date,
-    postForId.description,
-)
+fetch(`https://dev-lab.dev/api/posts/${id}`)
+.then(res => res.json())
+.then(data => {
+    postContainer.innerHTML += generateSinglePost(
+        `https://dev-lab.dev/${data.image}`,
+        data.title,
+        data.author,
+        data.date_created,
+        data.description,
+    )
+})
+
+

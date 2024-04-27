@@ -5,6 +5,7 @@ const cardWrapperElement = document.querySelector(".card-wrapper");
 // console.log(cardWrapperElement.textContent);
 
 function generatePost(id, imageLink, title, date, description) {
+    // TODO Create elements using DOM methods.
     return `
         <div class="blog-card">
             <img src="${imageLink}" alt="${title}">
@@ -17,12 +18,17 @@ function generatePost(id, imageLink, title, date, description) {
         </div>`
 }
 
-for (let i = 0; i < photographyBlogPosts.length; i++) {
-    cardWrapperElement.innerHTML += generatePost(
-        photographyBlogPosts[i].id,
-        photographyBlogPosts[i].imageLink,
-        photographyBlogPosts[i].title,
-        formatDate(photographyBlogPosts[i].date),
-        photographyBlogPosts[i].description,
-    )
-}
+fetch("https://dev-lab.dev/api/posts/")
+.then(res => res.json())
+.then(data => {
+    for (let i = 0; i < data.length; i++) {
+        cardWrapperElement.innerHTML += generatePost(
+            data[i].id,
+            `https://dev-lab.dev/${data[i].image}`,
+            data[i].title,
+            formatDate(data[i].date_created),
+            data[i].description,
+        )
+    }
+})
+
